@@ -1,0 +1,94 @@
+html {
+    box-sizing: border-box;
+    font-size: 65%;/*? 1rem = 10px*/}
+  *, *:before, *:after {
+    box-sizing: inherit;}
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}  
+/**Globales*/
+h1, h2, h3{
+    font-family: "Playfair Display", serif;
+    
+}
+h1{font-size: 5rem;margin: 2.8rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3rem;}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/**--------UTILIDADES--------*/
+.text-center{
+    text-align: center;
+}
+
+
+
+/**-------HEADER--------NAVEGACION-------*/
+.nombre-sitio{
+    text-align: center;
+}
+.nombre-sitio span{
+    color: #037bc0;
+}
+.nav-principal{
+    border-top: .1rem solid gainsboro;
+    border-bottom: .1rem solid gainsboro;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.nav-principal a{
+    text-transform: uppercase;
+}
+.nav-principal a:hover{
+    font-weight: bold;
+}
+/**-----MAIN------*/
+.contenedor-entrada{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.entrada-meta span{
+    color: #037bc0;
+}
+
+
+
+/**FOOTER*/
+.footer{
+    border-top: 1px solid gainsboro;
+    margin-top: 4rem;
+    padding-top: 1rem;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: justify;
+}
+.bloque-nav a{
+    display: block;
+    line-height: 1.8;
+}
+.footer p{
+    margin: 4rem 0 1rem 0;
+    text-align: center;
+}

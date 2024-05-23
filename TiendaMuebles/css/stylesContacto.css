@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+    font-size: 65%;/*? 1rem = 10px*/}
+  *, *:before, *:after {
+    box-sizing: inherit;}
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}  
+/**Globales*/
+h1, h2, h3{
+    font-family: "Playfair Display", serif;
+    
+}
+h1{font-size: 5rem;margin: 2.8rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3rem;}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/**--------UTILIDADES--------*/
+.text-center{
+    text-align: center;
+}
+.btn {
+    background-color: #124559;
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+    text-align: center;
+    border: none;
+    width: 30%;
+}
+.btn:hover {
+    background-color: #285a6e;
+    cursor: pointer;
+}
+
+
+/**-------HEADER--------NAVEGACION-------*/
+.nombre-sitio{
+    text-align: center;
+}
+.nombre-sitio span{
+    color: #037bc0;
+}
+.nav-principal{
+    border-top: .1rem solid gainsboro;
+    border-bottom: .1rem solid gainsboro;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.nav-principal a{
+    text-transform: uppercase;
+}
+.nav-principal a:hover{
+    font-weight: bold;
+}
+/**-----------MAIN-------------*/
+.formulario{
+    max-width: 60rem;
+    margin:  0 auto;
+}
+.formulario fieldset{
+    border: 1px solid black;
+    margin-bottom: 2.5rem;
+}
+.formulario legend{
+    background-color: #005485;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+    padding: .7rem;
+    margin-bottom: 2rem;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    /*padding-left: 2.54rem;*/
+}
+.campo label{
+    flex-basis: 10rem;
+}
+.campo input:not([type='radio']),
+.campo textarea,
+.campo select{
+    flex: 1;
+    border: 1px solid rgb(171, 170, 170);
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**FOOTER*/
+.footer{
+    border-top: 1px solid gainsboro;
+    margin-top: 4rem;
+    padding-top: 1rem;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: justify;
+}
+.bloque-nav a{
+    display: block;
+    line-height: 1.8;
+}
+.footer p{
+    margin: 4rem 0 1rem 0;
+    text-align: center;
+}

@@ -1,0 +1,281 @@
+html {
+    box-sizing: border-box;
+    font-size: 65%;/*? 1rem = 10px*/}
+  *, *:before, *:after {
+    box-sizing: inherit;}
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}  
+/**Globales*/
+h1, h2, h3{
+    font-family: "Playfair Display", serif;
+    
+}
+h1{font-size: 5rem;margin: 2.8rem;}
+h2{font-size: 4rem;}
+h3{font-size: 3rem;}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/**--------UTILIDADES--------*/
+.text-center{
+    text-align: center;
+}
+
+
+
+/**-------HEADER--------NAVEGACION-------*/
+.nombre-sitio{
+    text-align: center;
+}
+.nombre-sitio span{
+    color: #037bc0;
+}
+.nav-principal{
+    border-top: .1rem solid gainsboro;
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.nav-principal a{
+    text-transform: uppercase;
+}
+.nav-principal a:hover{
+    font-weight: bold;
+}
+.hero{
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55rem;
+}
+
+/**----------------CATEGORIA----------------*/
+
+.listado-categoria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.5rem;
+}
+.categoria{
+    margin-bottom: 5rem;
+}
+.categorias h2{
+    text-align: center;
+    margin: 3rem;
+}
+.categoria a{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+.categoria a:hover{
+    color: white;
+    background-color: #037bc0;
+}
+.categoria-enlace1:hover{
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: .5rem;
+}
+.categoria-enlace2:hover{
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+.categoria-enlace3:hover{
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+/**-------------SOBRE-NOSOTROS-------------*/
+.sobre-nosotros{
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+}
+.nosotros{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.nosotros-info{
+    color: white;
+    flex-basis: 50%;
+    padding-left: 8rem;
+}
+
+/**---------CONTENIDO-PRINCIPAL----------*/
+.contenido-principal {
+    padding-top: 5rem;
+}
+.listado-productos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
+.producto:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img {
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(2) img, .producto:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.producto:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.producto {
+    background-color: #037bc0;
+    margin-bottom: 2rem;
+}
+
+.texto-producto {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+.texto-producto h3 {
+    margin: 0;
+}
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+}
+.texto-producto .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out ;
+    text-align: center;
+    border: none;
+    width: 100%;
+}
+.btn:hover {
+    background-color: #769c02;
+    cursor: pointer;
+}
+
+/**FOOTER*/
+.footer{
+    border-top: 1px solid gainsboro;
+    margin-top: 4rem;
+    padding-top: 1rem;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: justify;
+}
+.bloque-nav a{
+    display: block;
+    line-height: 1.8;
+}
+.footer p{
+    margin: 4rem 0 1rem 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
