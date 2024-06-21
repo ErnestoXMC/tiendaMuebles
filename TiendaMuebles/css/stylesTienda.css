@@ -47,11 +47,30 @@ img {
     border-bottom: .1rem solid gainsboro;
     padding: 2rem 0rem;
     display: flex;
-    justify-content: center;
-    gap: 10rem;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 480px){
+    .nav-principal{
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+}
+@media (min-width: 769px){
+    .nav-principal{
+        gap: 10rem;
+    }
+
 }
 .nav-principal a{
     text-transform: uppercase;
+    border-bottom: 1px solid gainsboro;
+}
+@media (min-width: 480px){
+    .nav-principal a{
+        border-bottom: none;
+    }
 }
 .nav-principal a:hover{
     font-weight: bold;
@@ -60,16 +79,25 @@ img {
 .contenido-principal h2{
  text-align: center;
 }
-.productos-grid{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
+.productos-grid {
+    padding: 0 2rem;
 }
-.producto:nth-child(1){
-    grid-column: 1 / 7;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+@media (min-width: 480px){
+    .productos-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
 }
+@media (min-width: 480px){
+    .producto:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
 .producto:nth-child(1) img {
     height: 43rem;
     width: 100%;
@@ -114,6 +142,11 @@ img {
     font-size: 3rem;
     text-align: center;
 }
+@media (min-width: 769px){
+    .producto-precio{
+        margin: 1rem 0 0 0;
+    }
+}
 .producto-texto{
     padding: 2rem;
 }
@@ -136,31 +169,6 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**FOOTER*/
 .footer{
     border-top: 1px solid gainsboro;
@@ -168,10 +176,17 @@ img {
     padding-top: 1rem;
 }
 .footer-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    text-align: justify;
+    text-align: left;
+    padding-left: 5rem;
+}
+@media (min-width: 480px){
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        text-align: justify;
+        padding-left: 3rem;
+    }
 }
 .bloque-nav a{
     display: block;

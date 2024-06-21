@@ -31,28 +31,38 @@
 
         <main class="contenedor">
             <h2 class="text-center">Contacto</h2>
-            <form class="formulario">
+            <form class="formulario" id="formulario">
                 <fieldset>
                     <legend>Tus Datos</legend>
-                    <div class="campo">
-                        <label for="nombre">Nombre:</label>
-                        <input  id="nombre" type="text" placeholder="Ingresa tu Nombre" required>
+                    <div id="campo">
+                        <div class="campo" >
+                            <label for="nombre">Nombre:</label>
+                            <input  id="nombre" type="text" placeholder="Ingresa tu Nombre" name="nombre">
+                        </div>
                     </div>
-                    <div class="campo">
-                        <label for="asunto">Asunto:</label>
-                        <input  id="asunto" type="text" placeholder="Ingresa el Asunto" required>
-                    </div>
-                    <div class="campo">
-                        <label for="email">E-mail:</label>
-                        <input  id="email" type="email" placeholder="Ingresa tu E-mail" required>
-                    </div>
-                    <div class="campo">
-                        <label for="tel">Teléfono:</label>
-                        <input  id="tel" type="tel" placeholder="Ingresa tu Teléfono" required>
-                    </div>
-                    <div class="campo">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea  id="mensaje" rows="10" cols="20" required></textarea>
+                    <div id="campo">
+                        <div class="campo" id="campo">
+                            <label for="asunto">Asunto:</label>
+                            <input  id="asunto" type="text" placeholder="Ingresa el Asunto" name="asunto">
+                        </div>
+                    </div>                    
+                    <div id="campo">
+                        <div class="campo" id="campo">
+                            <label for="email">E-mail:</label>
+                            <input  id="email" type="email" placeholder="Ingresa tu E-mail" name="email">
+                        </div>
+                    </div>                   
+                    <div id="campo">
+                        <div class="campo" id="campo">
+                            <label for="telefono">Teléfono:</label>
+                            <input  id="telefono" type="number" placeholder="Ingresa tu Teléfono" name="telefono">
+                        </div>
+                    </div>                    
+                    <div id="campo">
+                        <div class="campo" id="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea  id="mensaje" rows="10" cols="20"  name="mensaje"></textarea>
+                        </div>
                     </div>
                 </fieldset>
 
@@ -60,7 +70,7 @@
                     <legend>País</legend>
                     <div class="campo">
                         <label for="pais">País: </label>
-                        <select id="pais" class="input" required>
+                        <select id="pais" class="input" >
                             <option disabled selected>--Seleccionar--</option>
                             <option value="PE">Perú</option>
                             <option value="MX">México</option>
@@ -83,7 +93,7 @@
                     </div>
                     <div class="campo">
                         <label for="categoria">Categoría de Interés</label>
-                        <input list="categorias" name="categorias" id="categoria" required>
+                        <input list="categorias" name="categorias" id="categoria" >
                         <datalist id="categorias">
                             <option value="Cocina">
                             <option value="Oficina">
@@ -94,8 +104,14 @@
                         </datalist>
                     </div>
                 </fieldset>
-                <input type="submit" value="Enviar" class="btn">
+                <input type="submit" value="Enviar" class="btn opacity-50 btnEnviar" disabled>
             </form>
+            <div class="sk-folding-cube hidden spinner">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+              </div>
         </main>
 
         <footer class="footer">
@@ -131,5 +147,6 @@
             </div>
             <p>Todos los derechos reservados, Tienda Muebles</p>
         </footer>
+        <script src="js/contacto.js"></script>
     </body>
 </html>
